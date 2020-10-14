@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
+import SearchCountry from './components/SearchCountry';
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <SearchCountry />
     </div>
   );
 }
