@@ -4,10 +4,15 @@
   padding: 0;
 }
 
+body {
+  margin: 0 auto;
+  background-color: hsl(207, 26%, 17%);
+}
+
 .nav {
-  background-color: rgba(8, 38, 92, 0.671);
+  background-color: hsl(209, 23%, 22%);
   color: white;
-  min-height: 10vh;
+  min-height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,4 +26,41 @@
 .dark-mode {
   padding-right: 4rem;
   font-size: 1.1rem;
+}
+
+input {
+  width: 15%;
+  background-color: hsl(209, 23%, 22%);
+  padding: 0.8rem;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.country-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 20rem;
+  margin-right: 20rem; */
+  background-color: hsl(207, 26%, 17%);
+}
+
+.card-container {
+  border: 1px solid black;
+  width: 33rem;
+  height: 26rem;
+  margin: 2rem;
+}
+
+.card-container-flag,
+img {
+  width: 33rem;
+  height: 20rem;
+}
+
+.country-stats {
+  margin: 0 auto;
+  color: white;
 }

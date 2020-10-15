@@ -18,10 +18,12 @@ const SearchCountry = () => {
   
   return (
     <div>
-      <input placeholder='Search for a country...'/>
-      {allCountries.map((m, idx) => {
-        return (<div key={idx}><img src={m.flag}/><h1>{m.name}</h1><h4>Population: {m.population}</h4> <h4>Region: {m.region}</h4> <h4>Capital: {m.capital}</h4></div>)
+    <input className='input' placeholder='Search for a country...'/>
+      <div className='country-container'>
+      {allCountries.map((country, idx) => {
+        return (<div className='card-container' key={idx}><div className='card-container-flag'><img  src={country.flag}/></div><div className='country-stats'><h1 className='card-container-country'>{country.name}</h1><h4 className='card-container-population'>Population: {country.population}</h4> <h4 className='card-container-region'>Region: {country.region}</h4> <h4 className='card-container-capital'>Capital: {country.capital}</h4></div></div>)
       })}
+      </div>
       </div>
   )
 }
